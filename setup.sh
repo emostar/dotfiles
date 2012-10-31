@@ -20,7 +20,7 @@ sudo apt-get install htop
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 # Install dotvim
-git >/dev/null && /usr/bin/env git clone https://github.com/mathrawka/dotvim.git ~/.my-dotfiles/dotvim
+/usr/bin/env git clone https://github.com/mathrawka/dotvim.git ~/.my-dotfiles/dotvim
 cd ~/.my-dotfiles/dotvim
 setup.sh
 
@@ -29,6 +29,6 @@ mkdir -p ~/bin
 cp ~/.my-dotfiles/bin/* ~/bin
 
 # Copy the dotfiles
-cp ~/.my-dotfiles/dotfiles/* ~
+cp ~/.my-dotfiles/dotfiles/.* ~
 
 cd ~
