@@ -26,7 +26,9 @@ setup.sh
 
 # Copy the bin files
 mkdir -p ~/bin
-cp bin/* ~/bin
+cp ~/.my-dotfiles/bin/* ~/bin
 
 # Copy the dotfiles
-cp dotfiles/* ~
+cp ~/.my-dotfiles/dotfiles/* ~
+
+cd ~
