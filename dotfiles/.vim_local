@@ -1,0 +1,21 @@
+set t_Co=16
+colorscheme solarized
+set wrap
+set mouse=
+set expandtab
+autocmd BufEnter * set relativenumber
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 iskeyword+=-
+autocmd FileType jade setlocal iskeyword+=-
+
+" For nodejs projects
+set path=.,public/
+nnoremap gf :exe 'find' substitute(expand('<cfile>'), '^/', '', '')<CR>
+
+let g:syntastic_auto_loc_list=0
+
+" Ack.vim
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+" Tabularize
+nmap <Leader>a :Tabularize /
+vmap <Leader>a :Tabularize /

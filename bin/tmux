@@ -1,0 +1,3 @@
+#!/bin/sh
+
+SSH_AUTH_SOCK=/tmp/ssh-agent-vagrant-screen /usr/bin/tmux $@
